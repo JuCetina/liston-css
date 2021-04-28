@@ -1,0 +1,68 @@
+p{
+    font-weight: bold;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-container{
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+.liston{
+    width: 100px;
+    height: 30px;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 25px;
+}
+
+.liston::before, .liston::after{
+    content: '';
+    width: 20px;
+    height: 8px;
+    background-color: rgb(21, 21, 172);
+    position: absolute;
+    top: 26px;
+    z-index: -2;
+}
+
+.liston::before{
+    transform: rotate(20deg);
+    left: 1px;
+}
+
+.liston::after{
+    transform: rotate(-20deg);
+    right: 1px;
+}
+
+.liston > p{
+    background-color: rgb(52, 52, 230);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    z-index: 1;
+}
+
+.contenido{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(110, 111, 179);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 250px;
+    position: relative;
+    top: -4px;
+    left: -67px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
